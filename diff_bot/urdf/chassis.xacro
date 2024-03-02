@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+
+    <!-- Chassis Link -->
+    <link name="chassis_link">
+        <visual>
+            <geometry>
+                <box size="${chassis_length} ${chassis_width} ${chassis_height}"/>
+            </geometry>
+            <origin xyz="${chassis_length/2} 0.0 ${chassis_height/2}"/>
+            <material name="green"/>
+        </visual>
+        <collision>
+            <origin xyz="${chassis_length/2} 0.0 ${chassis_height/2}"/>
+        </collision>
+        <xacro:inertial_box mass="${chassis_mass}" x="${chassis_length}" y="${chassis_width}" z="${chassis_height}">
+            <origin xyz="${chassis_length/2} 0 ${chassis_height/2}" rpy="0 0 0"/>
+        </xacro:inertial_box>
+    </link> 
+
+    <!-- Chassis joint -->
+    <joint name="chassis_joint" type="fixed">
+        <parent link="base_link"/>
+        <child link="chassis_link"/>
+        <origin xyz="-${wheel_offset_x} 0.0 0.0"/>
+    </joint>
+
+
+</robot>

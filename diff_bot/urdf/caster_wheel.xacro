@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- Caster Wheel Link -->
+    <link name="caster_wheel_link">
+        <visual>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <sphere radius="${caster_wheel_radius}"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+        <collision>
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+            <geometry>
+                <sphere radius="${caster_wheel_radius}"/>
+            </geometry>
+        </collision>
+
+        <xacro:inertial_sphere mass="${caster_wheel_mass}" radius="${caster_wheel_radius}">
+            <origin xyz="0.0 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        </xacro:inertial_sphere>
+    </link>
+
+    <!-- Caster Wheel Joit -->
+    <joint name="caster_wheel_join" type="fixed">
+        <origin xyz="${caster_wheel_offset_x} 0.0 ${caster_wheel_offset_z}" rpy="0.0 0.0 0.0"/>
+        <parent link="chassis_link"/>
+        <child link="caster_wheel_link"/>
+    </joint>
+
+
+    <!-- Caster Holder (Only for visuals) -->
+    <link name="caster_holder">
+        <visual>
+            <geometry>
+                <cylinder radius="${caster_wheel_radius/2}" length="${caster_wheel_offset_z*2}"/>
+            </geometry>
+            <material name="blue"/>
+        </visual>
+    </link>
+    <joint name="holder_joint" type="fixed">
+        <origin xyz="${caster_wheel_offset_x} 0.0 0.0" rpy="0.0 0.0 0.0"/>
+        <parent link="chassis_link"/>
+        <child link="caster_holder"/>
+    </joint>
+
+
+
+</robot>
