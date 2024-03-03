@@ -40,6 +40,5 @@ def generate_launch_description():
     return LaunchDescription(
         [            
             robot_state_publisher_node,
-            joint_state_publisher_node
         ]
     )

@@ -26,5 +26,9 @@
         <origin xyz="-${wheel_offset_x} 0.0 0.0"/>
     </joint>
 
+    <gazebo reference="chassis_link">
+        <material> Gazebo/Grey </material>
+    </gazebo>
+
 
 </robot>

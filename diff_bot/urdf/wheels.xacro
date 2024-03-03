@@ -24,9 +24,9 @@
 
 
     <!-- Wheel Joint Macro -->
-    <xacro:macro name="wheel_joint" params="joint_name wheel_name y_offset roll">
+    <xacro:macro name="wheel_joint" params="joint_name wheel_name y_offset ">
         <joint name="${joint_name}" type="continuous">
-            <origin xyz="0 ${y_offset} 0" rpy="${roll} 0.0 0.0"/>
+            <origin xyz="0 ${y_offset} 0" rpy="${-pi/2} 0.0 0.0"/>
             <parent link="base_link"/>
             <child link="${wheel_name}"/>
             <axis xyz="0.0 0.0 1"/>
@@ -37,7 +37,7 @@
     <xacro:wheel_link link_name="left_wheel_link" />
 
     <!-- Left Wheel Joint -->
-    <xacro:wheel_joint joint_name="left_wheel_joint" wheel_name="left_wheel_link" y_offset="${wheel_offset_y}" roll="${-pi/2}"/>
+    <xacro:wheel_joint joint_name="left_wheel_joint" wheel_name="left_wheel_link" y_offset="${wheel_offset_y}"/>
 
 
     
@@ -45,5 +45,13 @@
     <xacro:wheel_link link_name="right_wheel_link" />
 
     <!-- Right Wheel Joint -->
-    <xacro:wheel_joint joint_name="right_wheel_joint" wheel_name="right_wheel_link" y_offset="${-wheel_offset_y}" roll="${pi/2}"/>
+    <xacro:wheel_joint joint_name="right_wheel_joint" wheel_name="right_wheel_link" y_offset="${-wheel_offset_y}"/>
+
+    <gazebo reference="left_wheel_link">
+        <material> Gazebo/Black </material>
+    </gazebo>
+
+    <gazebo reference="right_wheel_link">
+        <material> Gazebo/Black </material>
+    </gazebo>
 </robot>

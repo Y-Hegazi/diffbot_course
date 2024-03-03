@@ -23,7 +23,7 @@
     </link>
 
     <!-- Caster Wheel Joit -->
-    <joint name="caster_wheel_join" type="fixed">
+    <joint name="caster_wheel_joint" type="fixed">
         <origin xyz="${caster_wheel_offset_x} 0.0 ${caster_wheel_offset_z}" rpy="0.0 0.0 0.0"/>
         <parent link="chassis_link"/>
         <child link="caster_wheel_link"/>
@@ -44,6 +44,11 @@
         <parent link="chassis_link"/>
         <child link="caster_holder"/>
     </joint>
+
+    <gazebo reference="caster_wheel_link">
+        <mu1 value="0.001"/>
+        <mu2 value="0.001"/>
+    </gazebo>
 
 
 
