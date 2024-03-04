@@ -8,6 +8,7 @@
     <xacro:include filename="caster_wheel.xacro"/>
     <xacro:include filename="gazebo_control.xacro"/>
     <xacro:include filename="control.xacro"/>
+    <xacro:include filename="lidar.xacro"/>
 
     <!-- Base Link -->
     <link name="base_link"/>
