@@ -790,38 +790,38 @@
       <pose>1.45729 0.155002 0 0 -0 0</pose>
     </model>
     <state world_name='default'>
-      <sim_time>613 657000000</sim_time>
-      <real_time>427 854627462</real_time>
-      <wall_time>1709551186 668136198</wall_time>
-      <iterations>427218</iterations>
+      <sim_time>714 74000000</sim_time>
+      <real_time>100 738819777</real_time>
+      <wall_time>1709597847 191752962</wall_time>
+      <iterations>100417</iterations>
       <model name='Construction Barrel'>
-        <pose>1.58648 0.150552 -0 3e-06 -2e-06 -1.2e-05</pose>
+        <pose>1.58649 0.150547 -0 0 0 -3e-06</pose>
         <scale>0.445151 0.445151 0.445151</scale>
         <link name='link'>
-          <pose>1.58648 0.150552 -0 3e-06 -2e-06 -1.2e-05</pose>
+          <pose>1.58649 0.150547 -0 0 0 -3e-06</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-0.79968 -1.40379 -0.461607 0.36836 -1.14301 3.13902</acceleration>
-          <wrench>-399.84 -701.893 -230.804 0 -0 0</wrench>
+          <acceleration>1.1594 0.338044 -0.279821 2.29641 0.243142 -3.14136</acceleration>
+          <wrench>579.701 169.022 -139.91 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Barrel_0'>
-        <pose>-0.010382 -2.46133 -1e-06 3e-06 -3e-06 -0.096932</pose>
+        <pose>-0.010354 -2.46139 0 2e-06 0 -0.096618</pose>
         <scale>0.352814 0.352814 0.352814</scale>
         <link name='link'>
-          <pose>-0.010382 -2.46133 -1e-06 3e-06 -3e-06 -0.096932</pose>
+          <pose>-0.010354 -2.46139 0 2e-06 0 -0.096618</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>-1.42847 -1.17304 -0.612011 -0.208979 0.429563 3.14159</acceleration>
-          <wrench>-714.232 -586.521 -306.006 0 -0 0</wrench>
+          <acceleration>1.78911 2.68934 2.0366 -0.133253 -1.18592 -0.385673</acceleration>
+          <wrench>894.553 1344.67 1018.3 0 -0 0</wrench>
         </link>
       </model>
       <model name='Construction Cone_1'>
-        <pose>2.3129 -0.773621 -0 0 0 -0.067787</pose>
-        <scale>0.470792 0.470792 0.470792</scale>
+        <pose>2.3129 -0.773621 -8e-06 3.3e-05 0.00011 -0.067785</pose>
+        <scale>5.55373 5.55373 5.55373</scale>
         <link name='link'>
-          <pose>2.3129 -0.773621 -0 0 0 -0.067787</pose>
+          <pose>2.3129 -0.773621 -8e-06 3.3e-05 0.00011 -0.067785</pose>
           <velocity>0 0 0 0 -0 0</velocity>
-          <acceleration>0 -0 -0.008512 -2.45133 1.17906 3.14159</acceleration>
-          <wrench>0 -0 -0.008512 0 -0 0</wrench>
+          <acceleration>0 0 -9.8 0 -0 0</acceleration>
+          <wrench>0 0 -9.8 0 -0 0</wrench>
         </link>
       </model>
       <model name='ground_plane'>
@@ -835,25 +835,25 @@
         </link>
       </model>
       <model name='my_bot'>
-        <pose>0.119028 -1.01962 0.032497 2.8e-05 -0.111909 1.57509</pose>
+        <pose>0.116807 -0.800821 0.032492 0 -0.111948 1.55653</pose>
         <scale>1 1 1</scale>
         <link name='base_link'>
-          <pose>0.119028 -1.01962 0.032497 2.8e-05 -0.111909 1.57509</pose>
-          <velocity>-0.002331 -0.000316 1e-06 -0.000247 0.055641 0.006482</velocity>
-          <acceleration>1.3645 0.006002 0.00102 -0.315177 -0.488057 3.0449</acceleration>
-          <wrench>1.37814 0.006062 0.00103 0 -0 0</wrench>
+          <pose>0.116807 -0.800821 0.032492 0 -0.111948 1.55653</pose>
+          <velocity>9.2e-05 0.009725 -0.007544 0.123432 -0.001541 1.5e-05</velocity>
+          <acceleration>-0.017221 -0.681126 0.472582 -1.08809 -0.811874 -1.21874</acceleration>
+          <wrench>-0.017393 -0.687937 0.477308 0 -0 0</wrench>
         </link>
         <link name='left_wheel_link'>
-          <pose>0.029034 -1.02 0.0325 1.57154 -0.918159 -1.56709</pose>
-          <velocity>-0.001373 -0.000705 0.005172 0.021231 -0.038998 0.006503</velocity>
-          <acceleration>-2.76168 -0.791158 10.3432 -2.45866 -0.419023 -0.991606</acceleration>
-          <wrench>-0.102182 -0.029273 0.382697 0 -0 0</wrench>
+          <pose>0.026817 -0.799536 0.032492 1.57081 -0.305131 -1.58506</pose>
+          <velocity>7.3e-05 0.00953 -0.007563 0.123448 -0.000388 1.4e-05</velocity>
+          <acceleration>0.084788 9.14549 -7.62928 2.11089 0.648926 0.23842</acceleration>
+          <wrench>0.003137 0.338383 -0.282284 0 -0 0</wrench>
         </link>
         <link name='right_wheel_link'>
-          <pose>0.209023 -1.01923 0.032495 -1.57014 -0.906241 1.57457</pose>
-          <velocity>-0.001386 7.9e-05 -0.005187 0.000266 -0.039792 0.006451</velocity>
-          <acceleration>-2.78863 0.762413 -10.3749 -2.92341 1.09867 -1.12984</acceleration>
-          <wrench>-0.103179 0.028209 -0.383872 0 -0 0</wrench>
+          <pose>0.206798 -0.802104 0.032492 1.57499 -1.56876 -1.58925</pose>
+          <velocity>7.7e-05 0.009525 -0.0076 0.12345 -0.000281 -2e-05</velocity>
+          <acceleration>0.100578 9.1627 -7.66755 1.70468 1.12551 -0.015125</acceleration>
+          <wrench>0.003721 0.33902 -0.283699 0 -0 0</wrench>
         </link>
       </model>
       <model name='my_env'>
@@ -914,7 +914,7 @@
     </state>
     <gui fullscreen='0'>
       <camera name='user_camera'>
-        <pose>-0.161064 -0.216688 11.2341 -4e-06 1.5538 -1.851</pose>
+        <pose>-0.181857 1.50195 7.04451 0 1.1938 -1.30297</pose>
         <view_controller>orbit</view_controller>
         <projection_type>perspective</projection_type>
       </camera>
@@ -973,7 +973,7 @@
         <collision name='collision'>
           <geometry>
             <mesh>
-              <scale>0.470792 0.470792 0.470792</scale>
+              <scale>5.55373 5.55373 5.55373</scale>
               <uri>model://construction_cone/meshes/construction_cone.dae</uri>
             </mesh>
           </geometry>
@@ -994,7 +994,7 @@
         <visual name='visual'>
           <geometry>
             <mesh>
-              <scale>0.470792 0.470792 0.470792</scale>
+              <scale>5.55373 5.55373 5.55373</scale>
               <uri>model://construction_cone/meshes/construction_cone.dae</uri>
             </mesh>
           </geometry>
