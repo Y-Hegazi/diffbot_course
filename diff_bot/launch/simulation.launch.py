@@ -17,7 +17,7 @@ def generate_launch_description():
         package=gazebo_pkg,
         executable=spawn_node,
         name="spawn_entity_node",
-        arguments=["-topic", "robot_description", "-entity", "my_bot"],
+        arguments=["-topic", "robot_description", "-entity", "my_bot", "-x", "0", "-y", "0"],
         output="screen"
     )
     
