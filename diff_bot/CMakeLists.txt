@@ -18,6 +18,7 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 find_package(rclcpp REQUIRED)
+find_package(geometry_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
@@ -30,6 +31,14 @@ if(BUILD_TESTING)
   ament_lint_auto_find_test_dependencies()
 endif()
 
+add_executable(cmd_vel_mapper src/cmd_vel_mapper.cpp)
+ament_target_dependencies(cmd_vel_mapper rclcpp geometry_msgs)
+
+install(TARGETS
+   cmd_vel_mapper
+   DESTINATION lib/${PROJECT_NAME}
+ )
+
 install(
   DIRECTORY
   urdf 
@@ -37,6 +46,7 @@ install(
   config
   worlds
   rviz
+  src
   DESTINATION
   share/${PROJECT_NAME}
 )
